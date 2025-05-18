@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avarice Labs offers marketing solutions including website building, social media marketing, SEO, and more. Contact us to unlock your business potential!">
+    <meta name="keywords" content="marketing, website building, social media, SEO, analytics, direct outreach">
+    <title>Avarice Labs - Marketing Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000000;
+            color: #d4af37;
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header {
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.2), #000000);
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .commitment-section {
+            background-color: rgba(212, 175, 55, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            font-size: 1.2rem;
+            color: #d4af37;
+            font-weight: 700;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #c0a13b;
+        }
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .service-box {
+            background-color: rgba(212, 175, 55, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(212, 175, 55, 0.2);
+        }
+        .service-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .service-box h3::before {
+            content: "★ ";
+            color: #d4af37;
+        }
+        .service-box p {
+            font-size: 1rem;
+            color: #d4af37;
+        }
+        .form-container {
+            background-color: rgba(212, 175, 55, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .form-container h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-container textarea {
+            height: 100px;
+            resize: none;
+        }
+        .form-container input:focus,
+        .form-container select:focus,
+        .form-container textarea:focus {
+            outline: none;
+            border-color: #e6c74f;
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #d4af37;
+            color: #000000;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #e6c74f;
+        }
+        footer {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to top, rgba(212, 175, 55, 0.2), #000000);
+            color: #c0a13b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        footer img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Avarice Labs Logo">
+        <h1>Avarice Labs</h1>
+        <div class="commitment-section">
+            <p>If you are willing to pay our fee, we will do the job.</p>
+        </div>
+    </header>
+    <main>
+        <p>Transform Your Business with Cutting-Edge Marketing Solutions</p>
+        <div class="services-section">
+            <div class="service-box">
+                <h3>Website Building</h3>
+                <p>Professional, custom websites tailored to your brand.</p>
+            </div>
+            <div class="service-box">
+                <h3>Social Media Marketing</h3>
+                <p>Boost your online presence with targeted campaigns.</p>
+            </div>
+            <div class="service-box">
+                <h3>Direct Outreach & Appointment Setting</h3>
+                <p>Connect with clients and secure opportunities.</p>
+            </div>
+            <div class="service-box">
+                <h3>SEO</h3>
+                <p>Optimize your site to rank higher and attract more traffic.</p>
+            </div>
+            <div class="service-box">
+                <h3>Analytics Tracking and Monthly Reports</h3>
+                <p>Monitor performance with detailed analytics and monthly insights.</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Unlock Your Business Potential</h2>
+            <input type="text" id="name" placeholder="Your Name" aria-label="Your Name">
+            <input type="email" id="email" placeholder="Your Email" aria-label="Your Email">
+            <input type="tel" id="phone" placeholder="Your Phone Number" aria-label="Your Phone Number">
+            <select id="service" aria-label="Select a service">
+                <option value="" disabled selected>Select a Service</option>
+                <option value="Website Building">Website Building</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Direct Outreach & Appointment Setting">Direct Outreach & Appointment Setting</option>
+                <option value="SEO">SEO</option>
+                <option value="Analytics Tracking and Monthly Reports">Analytics Tracking and Monthly Reports</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea id="inquiry" placeholder="Tell us more about your needs..." aria-label="Your inquiry details"></textarea>
+            <button onclick="submitForm()">Submit</button>
+        </div>
+    </main>
+    <footer>
+        <img src="logo.png" alt="Avarice Labs Logo">
+        <p>© 2025 Avarice Labs. All rights reserved.</p>
+    </footer>
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const inquiry = document.getElementById('inquiry').value;
+            if (name && email && phone && service) {
+                alert(`Thank you, ${name}! We'll contact you at ${email} or ${phone} within 24 hours regarding your interest in ${service}.` + (inquiry ? ` Inquiry details: ${inquiry}` : ''));
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('service').value = '';
+                document.getElementById('inquiry').value = '';
+            } else {
+                alert('Please fill in all required fields (Name, Email, Phone, and Service).');
+            }
+        }
+    </script>
+</body>
+</html>
